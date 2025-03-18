@@ -115,7 +115,9 @@ Now you have a terminal open, and have it pointed at your GitHub and CICD folder
 
 To do this write the the command:
 
+'''
 'git init'
+'''
 
 ![Image](Pictures/010.png)
 
@@ -222,7 +224,9 @@ Now you have created a local repository, and an online GitHub repository that ca
 
 When you have created the creation of your repository on GitHub you then need to navigate back to the console and enter the following command:
 
+'''
 'git remote add origin [link to your GitHub repository here]'
+'''
 
 This tells git the online repository that we are looking to use throughout the process.
 
@@ -230,7 +234,9 @@ Before we can begin pushing information from our local repository into the GitHu
 
 To do this enter the following command:
 
+'''
 'git pull origin main'
+'''
 
 and press enter.
 
@@ -355,7 +361,9 @@ You should add a screenshot of the completed website, with an explaination of wh
 ## Updating Your Local Repository
 Now you have created a program you need to tell your local git repository that you want to add the newly created files to it, you can do this by reopening the terminal and entering the command:
 
+'''
 'git status'
+'''
 
 ![Image](Pictures/025.png)
 
@@ -365,7 +373,9 @@ As the response suggests git can find your new file within the repository but th
 
 Git will only manage a file that it has been specifically told to track, so, like the response from the command prompt suggests we need to do this manually. To do this use the command:
 
+'''
 'git add .'
+'''
 
 Note: this command adds all untracked files and folders to the repository - if you only wish to add individual files to the commit you can do so by writing git add and then the name of the file – including its extension - e.g. git add testfile.txt
 
