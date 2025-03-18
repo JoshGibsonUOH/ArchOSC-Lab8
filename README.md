@@ -7,10 +7,10 @@
 </head>
 <body>
 <div class="container mt-5">
-    <div class="alert alert-primary" role="alert">
+    <div class="alert alert-warning" role="alert">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
     <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
-</svg> <strong>Task</strong>
+</svg> <strong>Task</strong> \n
 Ensure your resource groups are deleted before you start this Lab, We will not be going back to Azure after this - and you don't want to burn through all of your remaining credits! If you’re unsure on how to do this: refer to the previous labs.
     </div>
 </div>
@@ -115,9 +115,7 @@ Now you have a terminal open, and have it pointed at your GitHub and CICD folder
 
 To do this write the the command:
 
-'''
-'git init'
-'''
+<code>git init</code>
 
 ![Image](Pictures/010.png)
 
@@ -224,9 +222,8 @@ Now you have created a local repository, and an online GitHub repository that ca
 
 When you have created the creation of your repository on GitHub you then need to navigate back to the console and enter the following command:
 
-'''
-'git remote add origin [link to your GitHub repository here]'
-'''
+<code>git remote add origin [link to your GitHub repository here]</code>
+
 
 This tells git the online repository that we are looking to use throughout the process.
 
@@ -234,9 +231,7 @@ Before we can begin pushing information from our local repository into the GitHu
 
 To do this enter the following command:
 
-'''
-'git pull origin main'
-'''
+<code>git pull origin main</code>
 
 and press enter.
 
@@ -361,9 +356,7 @@ You should add a screenshot of the completed website, with an explaination of wh
 ## Updating Your Local Repository
 Now you have created a program you need to tell your local git repository that you want to add the newly created files to it, you can do this by reopening the terminal and entering the command:
 
-'''
-'git status'
-'''
+<code>git status</code>
 
 ![Image](Pictures/025.png)
 
@@ -373,9 +366,7 @@ As the response suggests git can find your new file within the repository but th
 
 Git will only manage a file that it has been specifically told to track, so, like the response from the command prompt suggests we need to do this manually. To do this use the command:
 
-'''
-'git add .'
-'''
+<code>git add .</code>
 
 Note: this command adds all untracked files and folders to the repository - if you only wish to add individual files to the commit you can do so by writing git add and then the name of the file – including its extension - e.g. git add testfile.txt
 
@@ -389,7 +380,7 @@ You will notice not only that they are shown in green to show that they are bein
 
 Now Git is picking up our now files we need to commit them so that they are saved to the repository.
 
-We do this by using the command: 'git commit –m “A message about the commit here”.'
+We do this by using the command: <code>git commit –m “A message about the commit here”</code>
 
 This tells git that we are committing the files it currently has on the stage. The message you add here should be clear show exactly what changes you are making to the repository.
 
