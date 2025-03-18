@@ -567,6 +567,3 @@ Using this link, you should be able to access your website from anywhere, includ
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-## Reflection 
-Write a small reflection on what you did in this lab. You should include information on GitHub, and how it could be used. 
